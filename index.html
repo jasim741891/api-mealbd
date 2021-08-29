@@ -8,14 +8,35 @@
     <title>API-mealdb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        #color {
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 
-<body>
+<body id="color">
+    <!-- text -->
     <h1 class="text-center mt-3 text-success">Can you see your favorite food please !!!</h1>
+
+    <!-- search button and input -->
     <div class="input-group mb-3 w-50 mx-auto mt-3">
-        <input type="text" class="form-control" placeholder="choice your favorite food please"
+        <input id="search-field" type="text" class="form-control" placeholder="choice your favorite food please"
             aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-primary" type="button" id="button-search">Button</button>
+        <button onclick="searchFood() " class="btn btn-primary" type="button" id="button-search">Button</button>
+    </div>
+    <!-- grid cards -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div> -->
     </div>
 
 
